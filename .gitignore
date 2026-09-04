@@ -1,0 +1,15 @@
+# Never publish the identifier crosswalk
+_ID_CROSSWALK_DO_NOT_PUBLISH.json
+*crosswalk*
+# Source data containing identifiers
+VR_JA_DATA*.xlsx
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+# OS
+.DS_Store
+Thumbs.db
+~$*

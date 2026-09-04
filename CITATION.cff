@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+title: >-
+  Data and analysis code for "Virtual Reality as a Complementary Tool for Joint
+  Attention Training in Autism: Evidence from a Randomized Controlled Study"
+message: Please cite the article, and this archive if you use the data or code.
+type: dataset
+authors:
+  - given-names: Hassan
+    family-names: Yazdanian
+    affiliation: Research Unit of Mathematical Sciences, University of Oulu, Finland
+  - given-names: Zohre
+    family-names: Bagheri Rekhne
+  - given-names: Ariana
+    family-names: Soltani
+  - given-names: Amirmohammad
+    family-names: Vakili
+  - given-names: Mohammad
+    family-names: Reza
+  - given-names: Sajjad
+    family-names: Zareii
+  - given-names: Mohsen
+    family-names: Vahedi
+    affiliation: >-
+      Department of Biostatistics and Epidemiology, University of Social Welfare
+      and Rehabilitation Sciences, Tehran, Iran
+  - given-names: Talieh
+    family-names: Zarifian
+    orcid: https://orcid.org/0000-0002-6067-829X
+    affiliation: >-
+      Department of Speech Therapy, Pediatric Neurorehabilitation Research
+      Center, University of Social Welfare and Rehabilitation Sciences,
+      Tehran, Iran
+keywords:
+  - joint attention
+  - autism spectrum disorder
+  - virtual reality
+  - randomized controlled trial
+license: CC-BY-4.0
+identifiers:
+  - type: other
+    value: IRCT20221224056907N1
+    description: Iranian Registry of Clinical Trials
+  - type: doi
+    value: 10.32598/jpcp.14.1.1077.1
+    description: Trial protocol

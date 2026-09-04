@@ -1,0 +1,97 @@
+outcome,family,timepoint,arm,n,mean,sd,mean_2dp,sd_2dp,display,basis,behavioural_definition
+CJARS_ss,C-JARS,T1,Intervention,21,32.904761904761905,10.917439085723181,32.9,10.92,32.90 ± 10.92,all available observations (NOT listwise),n/a
+CJARS_ss,C-JARS,T1,Control,22,32.40909090909091,9.742685123717868,32.41,9.74,32.41 ± 9.74,all available observations (NOT listwise),n/a
+CJARS_ss,C-JARS,T2,Intervention,20,22.4,8.216799223157654,22.4,8.22,22.40 ± 8.22,all available observations (NOT listwise),n/a
+CJARS_ss,C-JARS,T2,Control,20,28.05,7.0968858997227935,28.05,7.1,28.05 ± 7.10,all available observations (NOT listwise),n/a
+CJARS_ss,C-JARS,T3,Intervention,20,24.05,6.20250373894115,24.05,6.2,24.05 ± 6.20,all available observations (NOT listwise),n/a
+CJARS_ss,C-JARS,T3,Control,21,29.61904761904762,7.081498361760669,29.62,7.08,29.62 ± 7.08,all available observations (NOT listwise),n/a
+CJARS_ps,C-JARS,T1,Intervention,21,58.714285714285715,29.411125203131647,58.71,29.41,58.71 ± 29.41,all available observations (NOT listwise),n/a
+CJARS_ps,C-JARS,T1,Control,22,56.36363636363637,25.43253532021243,56.36,25.43,56.36 ± 25.43,all available observations (NOT listwise),n/a
+CJARS_ps,C-JARS,T2,Intervention,20,83.5,27.007796145401773,83.5,27.01,83.50 ± 27.01,all available observations (NOT listwise),n/a
+CJARS_ps,C-JARS,T2,Control,20,64.75,23.11954060734635,64.75,23.12,64.75 ± 23.12,all available observations (NOT listwise),n/a
+CJARS_ps,C-JARS,T3,Intervention,20,82.4,24.790490536748795,82.4,24.79,82.40 ± 24.79,all available observations (NOT listwise),n/a
+CJARS_ps,C-JARS,T3,Control,21,61.333333333333336,22.75155672329552,61.33,22.75,61.33 ± 22.75,all available observations (NOT listwise),n/a
+CJARS_sjas,C-JARS,T1,Intervention,21,-0.7259523809523811,1.3884987467913934,-0.73,1.39,-0.73 ± 1.39,all available observations (NOT listwise),n/a
+CJARS_sjas,C-JARS,T1,Control,22,-0.7515909090909091,1.2060540053533109,-0.75,1.21,-0.75 ± 1.21,all available observations (NOT listwise),n/a
+CJARS_sjas,C-JARS,T2,Intervention,20,0.5941666666666666,1.1646068909835265,0.59,1.16,0.59 ± 1.16,all available observations (NOT listwise),n/a
+CJARS_sjas,C-JARS,T2,Control,20,-0.2512500000000001,0.9701588275044429,-0.25,0.97,-0.25 ± 0.97,all available observations (NOT listwise),n/a
+CJARS_sjas,C-JARS,T3,Intervention,20,0.45666666666666655,1.0058949057448838,0.46,1.01,0.46 ± 1.01,all available observations (NOT listwise),n/a
+CJARS_sjas,C-JARS,T3,Control,21,-0.4412698412698412,0.9562712459167616,-0.44,0.96,-0.44 ± 0.96,all available observations (NOT listwise),n/a
+BS_RJA,Behavioural sample,T1,Intervention,20,5.8,4.047091223140523,5.8,4.05,5.80 ± 4.05,all available observations (NOT listwise),mean of raters M and Z
+BS_RJA,Behavioural sample,T1,Control,21,5.904761904761905,2.5080821737886083,5.9,2.51,5.90 ± 2.51,all available observations (NOT listwise),mean of raters M and Z
+BS_RJA,Behavioural sample,T2,Intervention,19,7.657894736842105,3.153713118333457,7.66,3.15,7.66 ± 3.15,all available observations (NOT listwise),mean of raters M and Z
+BS_RJA,Behavioural sample,T2,Control,19,5.631578947368421,2.3084512921915965,5.63,2.31,5.63 ± 2.31,all available observations (NOT listwise),mean of raters M and Z
+BS_RJA,Behavioural sample,T3,Intervention,19,7.7105263157894735,2.735140609191195,7.71,2.74,7.71 ± 2.74,all available observations (NOT listwise),mean of raters M and Z
+BS_RJA,Behavioural sample,T3,Control,21,6.833333333333333,2.933996137238993,6.83,2.93,6.83 ± 2.93,all available observations (NOT listwise),mean of raters M and Z
+BS_IJA,Behavioural sample,T1,Intervention,20,8.225,8.829488570752705,8.22,8.83,8.22 ± 8.83,all available observations (NOT listwise),mean of raters M and Z
+BS_IJA,Behavioural sample,T1,Control,21,7.380952380952381,8.437868157752826,7.38,8.44,7.38 ± 8.44,all available observations (NOT listwise),mean of raters M and Z
+BS_IJA,Behavioural sample,T2,Intervention,19,10.710526315789474,9.558759492786482,10.71,9.56,10.71 ± 9.56,all available observations (NOT listwise),mean of raters M and Z
+BS_IJA,Behavioural sample,T2,Control,19,9.736842105263158,9.951784347337238,9.74,9.95,9.74 ± 9.95,all available observations (NOT listwise),mean of raters M and Z
+BS_IJA,Behavioural sample,T3,Intervention,19,10.763157894736842,8.913735376517137,10.76,8.91,10.76 ± 8.91,all available observations (NOT listwise),mean of raters M and Z
+BS_IJA,Behavioural sample,T3,Control,21,7.428571428571429,4.632185537858222,7.43,4.63,7.43 ± 4.63,all available observations (NOT listwise),mean of raters M and Z
+BS_EC,Behavioural sample,T1,Intervention,20,3.025,2.009680519255159,3.02,2.01,3.02 ± 2.01,all available observations (NOT listwise),mean of raters M and Z
+BS_EC,Behavioural sample,T1,Control,21,3.5238095238095237,4.020187155084295,3.52,4.02,3.52 ± 4.02,all available observations (NOT listwise),mean of raters M and Z
+BS_EC,Behavioural sample,T2,Intervention,19,5.052631578947368,4.564034329047619,5.05,4.56,5.05 ± 4.56,all available observations (NOT listwise),mean of raters M and Z
+BS_EC,Behavioural sample,T2,Control,19,4.7105263157894735,4.41372792002937,4.71,4.41,4.71 ± 4.41,all available observations (NOT listwise),mean of raters M and Z
+BS_EC,Behavioural sample,T3,Intervention,19,3.8421052631578947,3.56702736329935,3.84,3.57,3.84 ± 3.57,all available observations (NOT listwise),mean of raters M and Z
+BS_EC,Behavioural sample,T3,Control,21,4.4523809523809526,4.392905535931662,4.45,4.39,4.45 ± 4.39,all available observations (NOT listwise),mean of raters M and Z
+BS_FL,Behavioural sample,T1,Intervention,20,8.55,2.615238743252808,8.55,2.62,8.55 ± 2.62,all available observations (NOT listwise),mean of raters M and Z
+BS_FL,Behavioural sample,T1,Control,21,7.833333333333333,1.2974333637352378,7.83,1.3,7.83 ± 1.30,all available observations (NOT listwise),mean of raters M and Z
+BS_FL,Behavioural sample,T2,Intervention,19,8.605263157894736,1.9045190947995612,8.61,1.9,8.61 ± 1.90,all available observations (NOT listwise),mean of raters M and Z
+BS_FL,Behavioural sample,T2,Control,19,8.236842105263158,1.1101604119904824,8.24,1.11,8.24 ± 1.11,all available observations (NOT listwise),mean of raters M and Z
+BS_FL,Behavioural sample,T3,Intervention,19,7.657894736842105,1.7721035176289737,7.66,1.77,7.66 ± 1.77,all available observations (NOT listwise),mean of raters M and Z
+BS_FL,Behavioural sample,T3,Control,21,7.571428571428571,1.1212238211627763,7.57,1.12,7.57 ± 1.12,all available observations (NOT listwise),mean of raters M and Z
+BS_T,Behavioural sample,T1,Intervention,20,25.6,11.945710527214363,25.6,11.95,25.60 ± 11.95,all available observations (NOT listwise),mean of raters M and Z
+BS_T,Behavioural sample,T1,Control,21,24.642857142857142,11.506675081385216,24.64,11.51,24.64 ± 11.51,all available observations (NOT listwise),mean of raters M and Z
+BS_T,Behavioural sample,T2,Intervention,19,32.026315789473685,9.687439869649264,32.03,9.69,32.03 ± 9.69,all available observations (NOT listwise),mean of raters M and Z
+BS_T,Behavioural sample,T2,Control,19,28.31578947368421,9.888560346733703,28.32,9.89,28.32 ± 9.89,all available observations (NOT listwise),mean of raters M and Z
+BS_T,Behavioural sample,T3,Intervention,19,29.973684210526315,9.717500942186913,29.97,9.72,29.97 ± 9.72,all available observations (NOT listwise),mean of raters M and Z
+BS_T,Behavioural sample,T3,Control,21,26.285714285714285,6.537529022060683,26.29,6.54,26.29 ± 6.54,all available observations (NOT listwise),mean of raters M and Z
+JAST_arja,JAST,T1,Intervention,20,1.95,0.9445132413883326,1.95,0.94,1.95 ± 0.94,all available observations (NOT listwise),n/a
+JAST_arja,JAST,T1,Control,21,2.0634920634920633,0.8667887581889554,2.06,0.87,2.06 ± 0.87,all available observations (NOT listwise),n/a
+JAST_arja,JAST,T2,Intervention,19,2.8070175438596494,0.5129891760425771,2.81,0.51,2.81 ± 0.51,all available observations (NOT listwise),n/a
+JAST_arja,JAST,T2,Control,19,2.263157894736842,0.7583196772756656,2.26,0.76,2.26 ± 0.76,all available observations (NOT listwise),n/a
+JAST_arja,JAST,T3,Intervention,19,2.859649122807017,0.3204123399252099,2.86,0.32,2.86 ± 0.32,all available observations (NOT listwise),n/a
+JAST_arja,JAST,T3,Control,21,2.206349206349206,0.7851128048899192,2.21,0.79,2.21 ± 0.79,all available observations (NOT listwise),n/a
+JAST_aija,JAST,T1,Intervention,20,0.65,1.1367080817685318,0.65,1.14,0.65 ± 1.14,all available observations (NOT listwise),n/a
+JAST_aija,JAST,T1,Control,21,0.5714285714285714,0.9783367810436535,0.57,0.98,0.57 ± 0.98,all available observations (NOT listwise),n/a
+JAST_aija,JAST,T2,Intervention,19,2.7719298245614032,0.7119147505746528,2.77,0.71,2.77 ± 0.71,all available observations (NOT listwise),n/a
+JAST_aija,JAST,T2,Control,19,1.3859649122807018,1.2632661855248792,1.39,1.26,1.39 ± 1.26,all available observations (NOT listwise),n/a
+JAST_aija,JAST,T3,Intervention,19,2.719298245614035,0.6503860002473445,2.72,0.65,2.72 ± 0.65,all available observations (NOT listwise),n/a
+JAST_aija,JAST,T3,Control,21,1.2380952380952381,1.4458479140200708,1.24,1.45,1.24 ± 1.45,all available observations (NOT listwise),n/a
+GARS_rr,GARS-3,T1,Intervention,21,55.857142857142854,6.762290398124841,55.86,6.76,55.86 ± 6.76,all available observations (NOT listwise),n/a
+GARS_rr,GARS-3,T1,Control,22,56.5,6.4124135564581,56.5,6.41,56.50 ± 6.41,all available observations (NOT listwise),n/a
+GARS_rr,GARS-3,T2,Intervention,20,48.2,3.67924477376311,48.2,3.68,48.20 ± 3.68,all available observations (NOT listwise),n/a
+GARS_rr,GARS-3,T2,Control,20,54.2,6.550210924687445,54.2,6.55,54.20 ± 6.55,all available observations (NOT listwise),n/a
+GARS_rr,GARS-3,T3,Intervention,20,47.4,4.717269504591334,47.4,4.72,47.40 ± 4.72,all available observations (NOT listwise),n/a
+GARS_rr,GARS-3,T3,Control,21,53.904761904761905,6.941936054911209,53.9,6.94,53.90 ± 6.94,all available observations (NOT listwise),n/a
+GARS_si,GARS-3,T1,Intervention,21,52.0,5.727128425310541,52.0,5.73,52.00 ± 5.73,all available observations (NOT listwise),n/a
+GARS_si,GARS-3,T1,Control,22,51.0,8.159131606453506,51.0,8.16,51.00 ± 8.16,all available observations (NOT listwise),n/a
+GARS_si,GARS-3,T2,Intervention,20,45.3,4.117996446919558,45.3,4.12,45.30 ± 4.12,all available observations (NOT listwise),n/a
+GARS_si,GARS-3,T2,Control,20,48.05,7.104298180086402,48.05,7.1,48.05 ± 7.10,all available observations (NOT listwise),n/a
+GARS_si,GARS-3,T3,Intervention,20,45.75,4.777964772622445,45.75,4.78,45.75 ± 4.78,all available observations (NOT listwise),n/a
+GARS_si,GARS-3,T3,Control,21,48.904761904761905,5.83013517771897,48.9,5.83,48.90 ± 5.83,all available observations (NOT listwise),n/a
+GARS_sc,GARS-3,T1,Intervention,21,56.76190476190476,4.276736628607866,56.76,4.28,56.76 ± 4.28,all available observations (NOT listwise),n/a
+GARS_sc,GARS-3,T1,Control,22,57.63636363636363,4.326501440958354,57.64,4.33,57.64 ± 4.33,all available observations (NOT listwise),n/a
+GARS_sc,GARS-3,T2,Intervention,20,55.5,4.019688388027374,55.5,4.02,55.50 ± 4.02,all available observations (NOT listwise),n/a
+GARS_sc,GARS-3,T2,Control,20,58.05,3.59055779276116,58.05,3.59,58.05 ± 3.59,all available observations (NOT listwise),n/a
+GARS_sc,GARS-3,T3,Intervention,20,56.5,3.9403446282620616,56.5,3.94,56.50 ± 3.94,all available observations (NOT listwise),n/a
+GARS_sc,GARS-3,T3,Control,21,58.38095238095238,3.4274799850063373,58.38,3.43,58.38 ± 3.43,all available observations (NOT listwise),n/a
+GARS_er,GARS-3,T1,Intervention,21,55.61904761904762,5.219925195596107,55.62,5.22,55.62 ± 5.22,all available observations (NOT listwise),n/a
+GARS_er,GARS-3,T1,Control,22,55.09090909090909,6.232855272544425,55.09,6.23,55.09 ± 6.23,all available observations (NOT listwise),n/a
+GARS_er,GARS-3,T2,Intervention,20,49.15,4.295346318982906,49.15,4.3,49.15 ± 4.30,all available observations (NOT listwise),n/a
+GARS_er,GARS-3,T2,Control,20,54.6,6.090544872349703,54.6,6.09,54.60 ± 6.09,all available observations (NOT listwise),n/a
+GARS_er,GARS-3,T3,Intervention,20,48.0,2.361979544454408,48.0,2.36,48.00 ± 2.36,all available observations (NOT listwise),n/a
+GARS_er,GARS-3,T3,Control,21,54.57142857142857,5.979727657439162,54.57,5.98,54.57 ± 5.98,all available observations (NOT listwise),n/a
+ACSF_tp,ACSF:SC,T1,Intervention,21,3.619047619047619,0.7400128699009549,3.62,0.74,3.62 ± 0.74,all available observations (NOT listwise),n/a
+ACSF_tp,ACSF:SC,T1,Control,22,3.409090909090909,0.7341396590302414,3.41,0.73,3.41 ± 0.73,all available observations (NOT listwise),n/a
+ACSF_tp,ACSF:SC,T2,Intervention,20,3.3,0.7326950970650465,3.3,0.73,3.30 ± 0.73,all available observations (NOT listwise),n/a
+ACSF_tp,ACSF:SC,T2,Control,20,3.3,0.6569466853317862,3.3,0.66,3.30 ± 0.66,all available observations (NOT listwise),n/a
+ACSF_tp,ACSF:SC,T3,Intervention,20,3.15,0.7451598203705947,3.15,0.75,3.15 ± 0.75,all available observations (NOT listwise),n/a
+ACSF_tp,ACSF:SC,T3,Control,21,3.1904761904761907,0.6015852075182383,3.19,0.6,3.19 ± 0.60,all available observations (NOT listwise),n/a
+ACSF_cc,ACSF:SC,T1,Intervention,21,3.238095238095238,0.7003400534570262,3.24,0.7,3.24 ± 0.70,all available observations (NOT listwise),n/a
+ACSF_cc,ACSF:SC,T1,Control,22,3.0454545454545454,0.998917162649385,3.05,1.0,3.05 ± 1.00,all available observations (NOT listwise),n/a
+ACSF_cc,ACSF:SC,T2,Intervention,20,2.65,0.5871429486123998,2.65,0.59,2.65 ± 0.59,all available observations (NOT listwise),n/a
+ACSF_cc,ACSF:SC,T2,Control,20,2.9,0.7181848464596078,2.9,0.72,2.90 ± 0.72,all available observations (NOT listwise),n/a
+ACSF_cc,ACSF:SC,T3,Intervention,20,2.65,0.6708203932499369,2.65,0.67,2.65 ± 0.67,all available observations (NOT listwise),n/a
+ACSF_cc,ACSF:SC,T3,Control,21,2.9047619047619047,0.7003400534570261,2.9,0.7,2.90 ± 0.70,all available observations (NOT listwise),n/a

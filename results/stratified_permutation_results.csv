@@ -1,0 +1,28 @@
+outcome,contrast,observed_statistic,statistic_type,permutation_p,n_permutations,p_parametric_verbal_adjusted,perm_sig,parametric_sig,agreement,stratification
+CJARS_sjas,Omnibus Group x Time,11.563756003869614,Wald F (2 df),0.0,10000,4.071382629738457e-05,True,True,agree,labels permuted within verbal/nonverbal strata
+CJARS_sjas,T1->T2 difference in change,4.033929833071897,t (Wald),0.0001,10000,0.0001280687080025,True,True,agree,labels permuted within verbal/nonverbal strata
+CJARS_sjas,T1->T3 difference in change,4.267069285262236,t (Wald),0.0003,10000,5.58117976032583e-05,True,True,agree,labels permuted within verbal/nonverbal strata
+JAST_arja,Omnibus Group x Time,7.580619968221567,Wald F (2 df),0.0016,10000,0.0010098993033272,True,True,agree,labels permuted within verbal/nonverbal strata
+JAST_arja,T1->T2 difference in change,3.259557601963939,t (Wald),0.0055,10000,0.0016850173361481,True,True,agree,labels permuted within verbal/nonverbal strata
+JAST_arja,T1->T3 difference in change,3.4380447527282323,t (Wald),0.0013,10000,0.0009661238936728,True,True,agree,labels permuted within verbal/nonverbal strata
+JAST_aija,Omnibus Group x Time,11.55527192313064,Wald F (2 df),0.0002,10000,4.270290410619026e-05,True,True,agree,labels permuted within verbal/nonverbal strata
+JAST_aija,T1->T2 difference in change,4.150927947530212,t (Wald),0.0002,10000,8.719862127571913e-05,True,True,agree,labels permuted within verbal/nonverbal strata
+JAST_aija,T1->T3 difference in change,4.127309727124129,t (Wald),0.0008,10000,9.532408770892972e-05,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_rr,Omnibus Group x Time,16.299821481768433,Wald F (2 df),0.0,10000,1.2298242512819915e-06,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_rr,T1->T2 difference in change,-4.712287120696345,t (Wald),0.0,10000,1.0517338928122016e-05,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_rr,T1->T3 difference in change,-5.127391385224034,t (Wald),0.0,10000,2.093736453855675e-06,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_si,Omnibus Group x Time,12.322072471239029,Wald F (2 df),0.0,10000,2.3159106681827888e-05,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_si,T1->T2 difference in change,-4.108352585711445,t (Wald),0.0004,10000,9.937561725460826e-05,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_si,T1->T3 difference in change,-4.452024611884567,t (Wald),0.0001,10000,2.8682008033805972e-05,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_sc,Omnibus Group x Time,5.169335583135484,Wald F (2 df),0.0065,10000,0.0078212648336684,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_sc,T1->T2 difference in change,-3.130825147895645,t (Wald),0.0062,10000,0.0024608614728727,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_sc,T1->T3 difference in change,-2.183350232915004,t (Wald),0.0275,10000,0.0320476271259047,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_er,Omnibus Group x Time,29.605639975719036,Wald F (2 df),0.0,10000,2.878808973293297e-10,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_er,T1->T2 difference in change,-5.833232893103583,t (Wald),0.0,10000,1.19753439398945e-07,True,True,agree,labels permuted within verbal/nonverbal strata
+GARS_er,T1->T3 difference in change,-7.2423920883379695,t (Wald),0.0,10000,2.83265138821225e-10,True,True,agree,labels permuted within verbal/nonverbal strata
+ACSF_cc,Omnibus Group x Time,7.2043680631957105,Wald F (2 df),0.006,10000,0.0013557499733857,True,True,agree,labels permuted within verbal/nonverbal strata
+ACSF_cc,T1->T2 difference in change,-3.3403700369114886,t (Wald),0.0043,10000,0.0012911176167776,True,True,agree,labels permuted within verbal/nonverbal strata
+ACSF_cc,T1->T3 difference in change,-3.2149067618823572,t (Wald),0.0081,10000,0.001907067524196,True,True,agree,labels permuted within verbal/nonverbal strata
+BS_RJA,Omnibus Group x Time,2.137015392880441,Wald F (2 df),0.118,10000,0.1251276818809365,False,False,agree,labels permuted within verbal/nonverbal strata
+BS_RJA,T1->T2 difference in change,2.0597163052991103,t (Wald),0.0488,10000,0.0428859910644373,True,True,agree,labels permuted within verbal/nonverbal strata
+BS_RJA,T1->T3 difference in change,0.8416640953168053,t (Wald),0.4715,10000,0.4026719562291876,False,False,agree,labels permuted within verbal/nonverbal strata

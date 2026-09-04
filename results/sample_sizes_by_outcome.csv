@@ -1,0 +1,17 @@
+family,outcome,randomized_N,n_participants_with_any_obs,n_observations_used,n_T1,n_T1_ctrl,n_T1_int,n_T2,n_T2_ctrl,n_T2_int,n_T3,n_T3_ctrl,n_T3_int,all_43_contribute_at_least_one_obs
+C-JARS,CJARS_ss,43,43,124,43,22,21,40,20,20,41,21,20,True
+C-JARS,CJARS_ps,43,43,124,43,22,21,40,20,20,41,21,20,True
+C-JARS,CJARS_sjas,43,43,124,43,22,21,40,20,20,41,21,20,True
+Behavioural sample,BS_RJA,43,41,119,41,21,20,38,19,19,40,21,19,False
+Behavioural sample,BS_IJA,43,41,119,41,21,20,38,19,19,40,21,19,False
+Behavioural sample,BS_EC,43,41,119,41,21,20,38,19,19,40,21,19,False
+Behavioural sample,BS_FL,43,41,119,41,21,20,38,19,19,40,21,19,False
+Behavioural sample,BS_T,43,41,119,41,21,20,38,19,19,40,21,19,False
+JAST,JAST_arja,43,41,119,41,21,20,38,19,19,40,21,19,False
+JAST,JAST_aija,43,41,119,41,21,20,38,19,19,40,21,19,False
+GARS-3,GARS_rr,43,43,124,43,22,21,40,20,20,41,21,20,True
+GARS-3,GARS_si,43,43,124,43,22,21,40,20,20,41,21,20,True
+GARS-3,GARS_sc,43,43,124,43,22,21,40,20,20,41,21,20,True
+GARS-3,GARS_er,43,43,124,43,22,21,40,20,20,41,21,20,True
+ACSF:SC,ACSF_tp,43,43,124,43,22,21,40,20,20,41,21,20,True
+ACSF:SC,ACSF_cc,43,43,124,43,22,21,40,20,20,41,21,20,True
