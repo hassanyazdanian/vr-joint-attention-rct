@@ -9,7 +9,6 @@ Joint Attention Training in Autism: Evidence from a Randomized Controlled Study.
 - **Ethics approval:** IR.USWR.REC.1401.177, Ethics Commission of the University of
   Social Welfare and Rehabilitation Sciences, Tehran, Iran (21 December 2022)
 - **Protocol:** https://doi.org/10.32598/jpcp.14.1.1077.1
-- **Archived release:** https://doi.org/10.5281/zenodo.22311114
 
 ## The trial in one paragraph
 
