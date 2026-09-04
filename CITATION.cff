@@ -49,9 +49,6 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.22311114
     description: Concept DOI, resolves to the most recent archived version
-  - type: doi
-    value: 10.5281/zenodo.22311115
-    description: Archived snapshot of version 1.0.0
 references:
   - type: article
     title: >-
