@@ -18,7 +18,7 @@ import pandas as pd
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent.parent          # analysis_verbal_adjusted/
-ROOT = HERE.parent                                      # Revision-Claude/
+ROOT = HERE.parent                                     
 RAW = ROOT / "data_raw" / "VR_JA_DATA_reviewed_20260821.xlsx"
 DER = HERE / "derived"
 DER.mkdir(parents=True, exist_ok=True)
