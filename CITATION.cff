@@ -57,7 +57,28 @@ references:
     doi: 10.32598/jpcp.14.1.1077.1
     authors:
       - given-names: Hassan
-        family-names: Yazdanian
-      - given-names: Talieh
-        family-names: Zarifian
+      family-names: Yazdanian
+      affiliation: Research Unit of Mathematical Sciences, University of Oulu, Finland
+    - given-names: Zohre
+      family-names: Bagheri Rekhne
+    - given-names: Ariana
+      family-names: Soltani
+    - given-names: Amirmohammad
+      family-names: Vakili
+    - given-names: Mohammad
+      family-names: Reza
+    - given-names: Sajjad
+      family-names: Zareii
+    - given-names: Mohsen
+      family-names: Vahedi
+      affiliation: >-
+        Department of Biostatistics and Epidemiology, University of Social Welfare
+        and Rehabilitation Sciences, Tehran, Iran
+    - given-names: Talieh
+      family-names: Zarifian
+      orcid: https://orcid.org/0000-0002-6067-829X
+      affiliation: >-
+        Department of Speech Therapy, Pediatric Neurorehabilitation Research
+        Center, University of Social Welfare and Rehabilitation Sciences,
+        Tehran, Iran
     notes: Study protocol for the trial these data come from.
