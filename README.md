@@ -35,9 +35,7 @@ pip install -r requirements.txt
 python scripts/reproduce_primary.py
 ```
 
-This refits the primary model for all sixteen analysed outcomes and compares the
-thirty-two treatment contrasts against `results/contrast_results.csv`, the output
-of the pipeline that produced the published tables. All thirty-two reproduce.
+This script refits the point estimates and standard errors for all thirty-two treatment contrasts. It programmatically compares the point estimates against `results/contrast_results.csv` using a tolerance of 0.005. Confidence intervals are reconstructed using the refitted estimates and standard errors together with the stored Satterthwaite degrees of freedom. All thirty-two point-estimate checks pass.
 
 ## The model
 
