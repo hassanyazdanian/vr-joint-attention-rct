@@ -1,5 +1,7 @@
 # VR-based joint attention training in autism: data and analysis code
 
+[![DOI](https://zenodo.org/badge/1357580560.svg)](https://doi.org/10.5281/zenodo.22311114)
+
 Data and analysis code underlying **"Virtual Reality as a Complementary Tool for
 Joint Attention Training in Autism: Evidence from a Randomized Controlled Study."**
 
