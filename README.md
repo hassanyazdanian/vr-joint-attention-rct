@@ -9,6 +9,8 @@ Joint Attention Training in Autism: Evidence from a Randomized Controlled Study.
 - **Ethics approval:** IR.USWR.REC.1401.177, Ethics Commission of the University of
   Social Welfare and Rehabilitation Sciences, Tehran, Iran (21 December 2022)
 - **Protocol:** https://doi.org/10.32598/jpcp.14.1.1077.1
+- **Systematic review:** [Virtual/augmented reality for joint attention skills improvement in autism spectrum disorder: a systematic review](https://doi.org/10.1080/20473869.2023.2277604)
+- **VR system design:** [Design and development of a VR-based system for training response to joint attention in autistic children: A preliminary study](https://doi.org/10.1109/ICBME61513.2023.10488524)
 
 ## The trial in one paragraph
 
@@ -23,7 +25,7 @@ assessed at baseline (T1), post-intervention (T2, week 5) and follow-up (T3, wee
 
 ```
 data/       de-identified participant-level data (see Data section)
-scripts/    reproduction script, plus the redacted archival copies of the original analysis scripts
+scripts/    public-data reproduction scripts and redacted, publication-adapted archival scripts
 results/    every result file behind Tables 1-6 and S2.1-S2.3
 docs/       codebook and de-identification note
 ```
@@ -37,12 +39,21 @@ python scripts/reproduce_primary.py
 
 This script refits the point estimates and standard errors for all thirty-two treatment contrasts. It programmatically compares the point estimates against `results/contrast_results.csv` using a tolerance of 0.005. Confidence intervals are reconstructed using the refitted estimates and standard errors together with the stored Satterthwaite degrees of freedom. All thirty-two point-estimate checks pass.
 
-## Archival scripts
+## Archival and sensitivity scripts
 
-Files under `scripts/original/` are redacted archival copies. Most require the
-non-deposited source workbook and intermediate directories and are not intended
-as a standalone reproduction workflow. Use `scripts/reproduce_primary.py` for
-the supported reproduction route.
+Files under `scripts/original/` are redacted and, where necessary,
+publication-adapted copies of scripts used during the analysis and revision.
+Most require the non-deposited source workbook or intermediate directories and
+are not intended as standalone reproduction workflows.
+
+The supported primary reproduction is:
+
+`python scripts/reproduce_primary.py`
+
+The stratified permutation and multiplicity analyses can be regenerated from
+the deposited data using:
+
+`python scripts/original/fs06_permutation_multiplicity.py`
 
 ## Deviations from the protocol
 
@@ -55,7 +66,7 @@ deviations are also reported in the manuscript.
 
 ## The model
 
-Every inferential result in the paper comes from one specification:
+Every primary mixed-model inferential result in the paper comes from one specification:
 
 ```
 Outcome ~ Group * Time + VerbalStatus + (1 | participant)
@@ -102,10 +113,12 @@ variables were constant across the sample and carry no information.
 
 ## Software
 
-Analyses were implemented in Python 3.12 with statsmodels, and independently
-cross-validated against the IBM SPSS Statistics 26 MIXED procedure;
-`results/spss_vs_python.csv` records that comparison. The SPSS syntax as run is
-in `scripts/original/`, with local file paths replaced by `<PROJECT_ROOT>`.
+The primary mixed-model analyses were implemented in Python 3.12 with
+statsmodels and independently cross-validated against the IBM SPSS Statistics
+26 MIXED procedure; `results/spss_vs_python.csv` records that comparison.
+The corresponding SPSS syntax is included in `scripts/original/`.
+Machine-specific paths in the deposited scripts have been replaced by explicit
+placeholders such as `<PROJECT_ROOT>` and `<EXTERNAL_SPSS_DIR>`.
 
 ## Licence
 
