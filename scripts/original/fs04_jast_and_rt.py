@@ -46,8 +46,8 @@ for sh in sheets:
           and c.startswith("JAST_t") and c.endswith(("_sc", "_ct"))]
     feas.append({"source": f"workbook sheet '{sh}'", "task_level_columns": len(tl),
                  "non_null_values": 0})
-for f in ["G:/Our_clinical_trial/SPSS/All_Variables.sav",
-          "G:/Our_clinical_trial/SPSS/Data test reliability.sav"]:
+for f in ["<EXTERNAL_SPSS_DIR>/All_Variables.sav",
+          "<EXTERNAL_SPSS_DIR>/Data test reliability.sav"]:
     try:
         df, _ = pyreadstat.read_sav(f)
         tl = [c for c in df.columns if c.startswith("JAST_t")
