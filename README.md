@@ -37,6 +37,22 @@ python scripts/reproduce_primary.py
 
 This script refits the point estimates and standard errors for all thirty-two treatment contrasts. It programmatically compares the point estimates against `results/contrast_results.csv` using a tolerance of 0.005. Confidence intervals are reconstructed using the refitted estimates and standard errors together with the stored Satterthwaite degrees of freedom. All thirty-two point-estimate checks pass.
 
+## Archival scripts
+
+Files under `scripts/original/` are redacted archival copies. Most require the
+non-deposited source workbook and intermediate directories and are not intended
+as a standalone reproduction workflow. Use `scripts/reproduce_primary.py` for
+the supported reproduction route.
+
+## Deviations from the protocol
+
+The protocol planned independent-sample t-tests or Mann–Whitney U tests, Sidak
+multiplicity correction, and cause-dependent imputation. The final analysis
+instead used longitudinal mixed-effects models adjusted for communication
+status, likelihood-based handling of incomplete observations without imputation,
+and Holm correction with Benjamini–Hochberg sensitivity analyses. These
+deviations are also reported in the manuscript.
+
 ## The model
 
 Every inferential result in the paper comes from one specification:
