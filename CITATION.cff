@@ -4,6 +4,12 @@ title: >-
   Attention Training in Autism: Evidence from a Randomized Controlled Study"
 message: Please cite the article, and this archive if you use the data or code.
 type: dataset
+abstract: >-
+  De-identified participant-level data, analysis code, and result files
+  underlying a randomized controlled trial of VR-based joint attention training
+  in 43 school-aged boys with autism spectrum disorder. Trial registration
+  IRCT20221224056907N1 (Iranian Registry of Clinical Trials); ethics approval
+  IR.USWR.REC.1401.177.
 authors:
   - given-names: Hassan
     family-names: Yazdanian
@@ -36,13 +42,23 @@ keywords:
   - virtual reality
   - randomized controlled trial
 license: CC-BY-4.0
+version: 1.0.1
+date-released: "2026-09-04"
+doi: 10.5281/zenodo.22311114
 identifiers:
-  - type: other
-    value: IRCT20221224056907N1
-    description: Iranian Registry of Clinical Trials
   - type: doi
-    value: 10.32598/jpcp.14.1.1077.1
-    description: Trial protocol
-doi: 10.5281/zenodo.22311115
-version: 1.0.0
-date-released: 2026-09-04
+    value: 10.5281/zenodo.22311114
+    description: Concept DOI, resolves to the most recent archived version
+  - type: doi
+    value: 10.5281/zenodo.22311115
+    description: Archived snapshot of version 1.0.0
+references:
+  - type: article
+    title: "Virtual Reality to Improve Joint Attention Skills in Children With Autism: Protocol for a Randomized Controlled Trial"
+    doi: 10.32598/jpcp.14.1.1077.1
+    authors:
+      - given-names: Hassan
+        family-names: Yazdanian
+      - given-names: Talieh
+        family-names: Zarifian
+    notes: Study protocol for the trial these data come from.
