@@ -3,15 +3,16 @@ Final sensitivity run - STEPS 6 and 9: stratified permutation, and multiplicity.
 
 SECTION 6 - stratified permutation
   Treatment labels are permuted WITHIN the original verbal/nonverbal strata,
-  reflecting the stratified randomization. 10,000 permutations. The permuted
-  model retains the verbal adjustment term, so the permutation distribution is
-  generated under exactly the final primary model.
+  reflecting the stratified randomization. The analysis uses 100,000
+  permutations and retains the verbal-status adjustment term. Covariance
+  parameters are estimated once from the observed verbal-adjusted model and
+  then held fixed across permutations.
 
   Implementation note: with X = [B | g*C], B = [1, T2, T3, verbal] and
   C = [1, T2, T3], and group constant within participant, the GLS normal
   equations collapse to per-participant matrices that are precomputed once.
-  Each permutation is then O(1), which makes 10,000 permutations cheap and
-  exact (no approximation is introduced by the speed-up).
+  The matrix reduction introduces no additional approximation conditional on
+  the fixed covariance estimate.
 
 SECTION 9 - multiplicity
   Same strategy as the current revised analysis: Holm and Benjamini-Hochberg
@@ -22,24 +23,46 @@ SECTION 9 - multiplicity
   subscales, and the reaction-time variables are all excluded from the
   multiplicity families. Raw and adjusted p-values are kept in separate columns.
 
-Writes stratified_permutation_results.csv and multiplicity_results.csv
+Reads the deposited participant-level analysis file and contrast results.
+Writes results/stratified_permutation_results.csv and
+results/multiplicity_results.csv.
 """
+import hashlib
 import sys
+
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 import numpy as np
 import pandas as pd
-from scipy import optimize, stats
+from scipy import optimize
+
 import fs00_common as K
 
-HERE = K.HERE
-LONG = pd.read_csv(K.DER / "fs_long.csv")
-CON = pd.read_csv(K.ROOT / "analysis_verbal_adjusted" / "contrast_results.csv")
+RESULTS = K.ROOT / "results"
+LONG = (
+    pd.read_csv(K.ROOT / "data" / "analysis_long.csv")
+    .sort_values(["id", "time"])
+    .reset_index(drop=True)
+)
+CON = pd.read_csv(RESULTS / "contrast_results.csv")
 TIDX = {t: i for i, t in enumerate(K.TPS)}
-rng = np.random.default_rng(20260825)
-NPERM = 10000
+BASE_SEED = 20260825
+NPERM = 100_000
 
 KEY9 = ["CJARS_sjas", "JAST_arja", "JAST_aija", "GARS_rr", "GARS_si",
         "GARS_sc", "GARS_er", "ACSF_cc", "BS_RJA"]
+
+
+def make_rng(outcome):
+    """Return a deterministic RNG whose stream does not depend on KEY9 order."""
+    token = f"{BASE_SEED}:{outcome}".encode("utf-8")
+    seed = int.from_bytes(hashlib.sha256(token).digest()[:8], "little")
+    return np.random.default_rng(seed)
+
+
+def permutation_p(exceedances, n_permutations):
+    """Monte Carlo permutation p-value with the standard plus-one correction."""
+    return (exceedances + 1) / (n_permutations + 1)
 
 
 def build_sigma(theta):
@@ -75,8 +98,9 @@ print(f"SECTION 6 — STRATIFIED PERMUTATION ({NPERM:,} permutations)")
 print("=" * 78)
 prows = []
 for v in KEY9:
+    rng = make_rng(v)
     sub_all = []
-    for pid, s in LONG.groupby("id"):
+    for pid, s in LONG.groupby("id", sort=True):
         s = s[s[v].notna()]
         if len(s):
             sub_all.append((pid, s))
@@ -149,7 +173,9 @@ for v in KEY9:
     prows.append({
         "outcome": v, "contrast": "Omnibus Group x Time",
         "observed_statistic": obs_F, "statistic_type": "Wald F (2 df)",
-        "permutation_p": float((null_F >= obs_F).mean()),
+        "permutation_p": permutation_p(
+            int((null_F >= obs_F).sum()), NPERM
+        ),
         "n_permutations": NPERM,
         "p_parametric_verbal_adjusted": float(om["adj_p"].iloc[0]) if len(om) else np.nan,
     })
@@ -160,25 +186,30 @@ for v in KEY9:
         prows.append({
             "outcome": v, "contrast": lab,
             "observed_statistic": obs_t[lab], "statistic_type": "t (Wald)",
-            "permutation_p": float((np.abs(null_t[lab]) >= abs(obs_t[lab])).mean()),
+            "permutation_p": permutation_p(
+                int((np.abs(null_t[lab]) >= abs(obs_t[lab])).sum()), NPERM
+            ),
             "n_permutations": NPERM,
             "p_parametric_verbal_adjusted": float(pr["adj_p"].iloc[0]) if len(pr) else np.nan,
         })
     print(f"  {v:11s} done")
 
 PERM = pd.DataFrame(prows)
-PERM["perm_sig"] = PERM.permutation_p < 0.05
-PERM["parametric_sig"] = PERM.p_parametric_verbal_adjusted < 0.05
-PERM["agreement"] = np.where(PERM.perm_sig == PERM.parametric_sig,
-                             "agree", "*** DISAGREE ***")
+PERM["permutation_mcse"] = np.sqrt(
+    PERM.permutation_p * (1.0 - PERM.permutation_p) / (NPERM + 1)
+)
+PERM["near_0_05"] = (
+    (PERM.permutation_p - 0.05).abs() <= 2 * PERM.permutation_mcse
+)
 PERM["stratification"] = "labels permuted within verbal/nonverbal strata"
-PERM.to_csv(HERE / "stratified_permutation_results.csv", index=False)
+PERM.to_csv(RESULTS / "stratified_permutation_results.csv", index=False)
 print()
 print(PERM[["outcome", "contrast", "observed_statistic", "permutation_p",
-            "p_parametric_verbal_adjusted", "agreement"]]
+            "permutation_mcse", "p_parametric_verbal_adjusted", "near_0_05"]]
       .round(4).to_string(index=False))
 print()
-print(f"Disagreements: {int((PERM.agreement != 'agree').sum())}/{len(PERM)}")
+print(f"Tests within two Monte Carlo SEs of 0.05: "
+      f"{int(PERM.near_0_05.sum())}/{len(PERM)}")
 
 # ==================================================== multiplicity
 print()
@@ -226,7 +257,7 @@ for c in ["p_raw", "Holm_within_family", "BH_within_family", "Holm_all", "BH_all
 d["model"] = "verbal-adjusted primary LMM"
 d["estimand"] = "difference in change from T1 (Group x Time contrast)"
 d["excluded_from_families"] = "GARS_tot_6, GARS_cs, GARS_ms, JAST_RT_t1..t4"
-d.to_csv(HERE / "multiplicity_results.csv", index=False)
+d.to_csv(RESULTS / "multiplicity_results.csv", index=False)
 print(d[["test", "family", "p_raw", "Holm_within_family", "BH_within_family",
          "Holm_all", "BH_all"]].round(4).to_string(index=False))
 print()
