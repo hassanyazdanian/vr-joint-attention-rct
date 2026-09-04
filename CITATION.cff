@@ -54,7 +54,7 @@ identifiers:
     description: Archived snapshot of version 1.0.0
 references:
   - type: article
-    title: "Virtual Reality to Improve Joint Attention Skills in Children With Autism: Protocol for a Randomized Controlled Trial"
+    title: Virtual Reality to Improve Joint Attention Skills in Children With Autism: Protocol for a Randomized Controlled Trial
     doi: 10.32598/jpcp.14.1.1077.1
     authors:
       - given-names: Hassan
