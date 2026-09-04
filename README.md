@@ -23,7 +23,7 @@ assessed at baseline (T1), post-intervention (T2, week 5) and follow-up (T3, wee
 
 ```
 data/       de-identified participant-level data (see Data section)
-scripts/    reproduction script, plus the original analysis scripts as run
+scripts/    reproduction script, plus the redacted archival copies of the original analysis scripts
 results/    every result file behind Tables 1-6 and S2.1-S2.3
 docs/       codebook and de-identification note
 ```
