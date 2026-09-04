@@ -26,7 +26,7 @@ from scipy import optimize, stats
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent.parent          # posthoc_verbal_adjusted/
-ROOT = HERE.parent                                      # Revision-Claude/
+ROOT = HERE.parent                                     
 RAW = ROOT / "data_raw" / "VR_JA_DATA_reviewed_20260821.xlsx"
 EXPECTED_SHA = "844f2d0e10f35908c1bb43ee8d8f061f394e80907c9fca46f27eddcdf0d5eb31"
 
