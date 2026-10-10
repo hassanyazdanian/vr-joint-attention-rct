@@ -52,7 +52,7 @@ with the CONSORT flow diagram and with the per-cell sample sizes in Tables 2-6.
 | `icc_results.csv` | Inter-rater reliability, ICC(A,k), per behavioural domain per assessment |
 | `behavioral_nb_results.csv` | Negative-binomial sensitivity models for the behavioural counts |
 | `acsf_ordinal_results.csv`, `jast_ordinal_results.csv` | Cumulative-logit sensitivity models |
-| `stratified_permutation_results.csv` | 10,000 permutations within verbal-status strata |
+| `stratified_permutation_results.csv` | 100,000 permutations within verbal-status strata |
 | `jast_rt_descriptive.csv` | Response-time descriptives, with the missingness taxonomy |
 | `sample_sizes_by_outcome.csv` | Participants and observations contributing to each model |
 | `spss_vs_python.csv` | Quantity-by-quantity comparison against IBM SPSS Statistics 26 |
